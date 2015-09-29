@@ -1,5 +1,6 @@
 
 
+
 I think we need to define a couple terms First it will help us in reading this document later.
 
 Creator: the person who created the story currently being reviewed
@@ -29,12 +30,23 @@ How is this done?
 
 As of now i see know way to get to the queue screen?
 
-the way the queue is talked about in the first slide is not consistent with that of the fourth please elaborate on what the queue should be
+the way the queue is talked about in the first slide is not consistent with that of the fourth please elaborate on what the queue should be?
 
 will the new stories page display based on what is currently in the user’s queue?
 
+Member profile -followers/following/stories pages seem excessive can we just combine and have icons change columns?
 
 Functional Requirements:
+
+
+
+General
+
+1- all screens will direct you to the proper corresponding page
+
+2- the different screens will be populated with appropriate data from the accompanying database
+
+3- all data submitted will be properly stored in the database
 
 
 Login screen
@@ -214,13 +226,87 @@ Comments Screen
 6- send button, submits comment and refresh page
 
 
-Member Profile_Stories
+Member Profile_Stories/following/followers
 
-1- back button return you to previous screen
+1- back btn return you to previous screen
 
 2- display creators user picture 
 
-3- left: add/display follow button
+3- navigation bar displays creator’s name
+
+4- add/display user about blurb beneath photo
+
+5- right of photo: add/display “follow” btn
+
+6- user selects follow btn
+
+if Public 
+
+    6.1-follow btn display changes to following
+
+    6.2- creators “followers” count increases by 1
+
+    6.3- users “following” count increases by 1
+
+    6.4- user name will be added to the creators “followers” list
+
+    6.5- creator’s name will be added to the users “following” list 
+
+if private
+
+    6.6- follow btn display changes to pending
+
+    6.7 send push Notification of pending follower attach user information
+
+    6.8 user name is placed in creators pending list
+
+7- beneath about blurb display/add followers icon
+
+8- followers icon redirects to “Member Profile- followers screen
+
+9- beneath followers icon add followers count
+
+10- beneath about blurb display/add following icon
+
+11- followers icon redirects to “Member Profile- following screen
+
+12- beneath following icon add following count
+
+13- beneath about blurb display/add stories text 
+
+15- beneath stories text add stories count
+
+16- whichever icon is being used will be indicated by a color change
+
+For Stories(default)
+
+17- bellow counts in two columns add/display all stories created by this creator(picture and title)
+
+18- stories redirect to Member Stories screen 
+
+For followers
+
+19- display all followers names and follow btn (same functionality as previous)
+
+20- names redirect to that person’s member profile screen
+
+For following
+
+21- display all followed names and follow btn (same functionality as previous)
+
+23- names redirect to that person’s member profile screen
+
+
+Members Stories Screen
+
+
+this screen contains the same functionality as the home screen except for the following
+
+1- scrolling up and down will display different stories from the same creator 
+
+2- swiping left or right will display the same story by different creators
+
+please refer to Reconsider-Members stories
 
 
 
@@ -236,4 +322,15 @@ Reconsider
     1- consider tell/add/cancel instead of an off icon cancel cleaner and more intuitive
 
 -Queue
+
     1- the back button should take you to the screen which you were at before you proceeded to the queue 
+
+
+-Members Stories/followers/following
+
+    1- it seems to be overcomplicating the program by giving the users the option to swipe left at this point to see stories not associated with this creator is it necessary
+
+    2- is having the follow btn for every follower following person necessary
+
+
+
